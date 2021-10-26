@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="30dp"
@@ -25,7 +25,7 @@
 
         <LinearLayout
             android:id="@+id/pink_btn"
-            android:layout_width="333dp"
+            android:layout_width="350dp"
             android:layout_height="124dp"
             android:background="@drawable/pink_gradation_btn"
             android:orientation="vertical"
