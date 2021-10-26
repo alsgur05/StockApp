@@ -89,13 +89,14 @@
                 android:textColor="@color/black"/>
 
             <TextView
+                android:id="@+id/see_all_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="See All →"
                 android:textSize="18dp"
                 android:textColor="#FE555D"
                 android:layout_gravity="center"
-                android:layout_marginLeft="100dp"/>
+                android:layout_marginLeft="125dp"/>
 
         </LinearLayout>
 
@@ -123,7 +124,7 @@
                 <LinearLayout
                     android:layout_width="134dp"
                     android:layout_height="170dp"
-                    android:background="@drawable/black_gradation_btn"
+                    android:background="@drawable/aapl_gradation_btn"
                     android:layout_marginRight="20dp"
                     android:orientation="vertical"
                     android:padding="20dp">
@@ -146,7 +147,7 @@
                 <LinearLayout
                     android:layout_width="134dp"
                     android:layout_height="170dp"
-                    android:background="@drawable/red_gradation_btn"
+                    android:background="@drawable/mcd_gradation_btn"
                     android:layout_marginRight="20dp"
                     android:padding="20dp"
                     android:orientation="vertical">
@@ -169,7 +170,7 @@
                 <LinearLayout
                     android:layout_width="134dp"
                     android:layout_height="170dp"
-                    android:background="@drawable/blue_gradation_btn"
+                    android:background="@drawable/fb_gradation_btn"
                     android:layout_marginRight="20dp"
                     android:padding="20dp"
                     android:orientation="vertical">
@@ -214,57 +215,125 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="18dp"
-                    android:text="Most Valuable Stocks 2020"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B2B2B2"
-                    android:textSize="14dp"
-                    android:text="This is how you set your foot for 2020\nStock market recession. What's next..."/>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:text="Most Valuable Stocks 2021"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B2B2B2"
+                        android:textSize="14dp"
+                        android:text="This is how you set your foot for 2020\nStock market recession. What's next..."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/profile_radius"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="58dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/avatar_image01"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/profile_radius"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:layout_marginLeft="39dp">
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4A4A4A"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"/>
 
-                <ImageView
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/avatar_image01"
-                    android:layout_gravity="center"/>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:text="Samsung is sonjer timing"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B2B2B2"
+                        android:textSize="14dp"
+                        android:text="There's a person here on the 99th foolr\nHelp me"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="53dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/samsung_logo"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#4A4A4A"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp">
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#4A4A4A"
-            android:layout_marginRight="3dp"
-            android:layout_marginTop="10dp"/>
+        </ScrollView>
 
     </LinearLayout>
 
